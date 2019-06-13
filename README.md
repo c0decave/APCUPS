@@ -20,6 +20,25 @@ servers surviving, as long as it has battery power left.
 
 and some more :)
 
+### How does it work?
+
+The daemon, listening per default at tcp/3551 is waiting for connections. The protocol itself is
+build pretty simple. Lets look at the status request:
+
+`\x00\x06\x73\x74\x61\x74\x75\x73`
+
+As you can see, the first two bytes define the length of the request, in this particular case 6 bytes, after that the command is sent: status.
+
+
+The same is happening for the events request:
+
+`\x00\x06\x65\x76\x65\x6e\x74\x73`
+
+Six bytes again and then the string "events". 
+The response is setup similar, first the bytelength, then the ASCII data, at the end a newline and null byte is sent. Finally, if all data has been transfered the daemon sends an additional nullbyte. 
+
+If you looking for more information simply trace wireshark output or look into the code ;)
+
 ### Usage
 
 There are two different supported modes in the daemon. Those are:
