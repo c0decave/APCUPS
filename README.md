@@ -28,7 +28,7 @@ There are two different supported modes in the daemon. Those are:
 
 While status have detailed information about the daemon and its configuration itself, events covers power failures and alike.
 
-./apcupsd_disclosure.py -h
+`./apcupsd_disclosure.py -h
 usage: apcupsd_disclosure.py 0.1 dash@undisclose.de June 2019
        [-h] [-m MODE] -t TARGET [-p PORT]
 
@@ -41,17 +41,17 @@ optional arguments:
   -t TARGET, --target TARGET
                         define the target
   -p PORT, --port PORT  define the target port
-
+`
 Get the status information (you do not need the -m option as status is default):
-./apcupsd_disclosure.py -t 127.0.0.1 -m status
+`./apcupsd_disclosure.py -t 127.0.0.1 -m status`
 
 Get the events:
-./apcupsd_disclosure.py -t 127.0.0.1 -m events
+`./apcupsd_disclosure.py -t 127.0.0.1 -m events`
 
 ### Shodan
 
 Search: https://www.shodan.io/search?query=port%3A3551
-Result: 26,000
+Results: 26,000
 
 ## Disclaimer
 
