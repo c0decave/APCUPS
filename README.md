@@ -28,11 +28,11 @@ There are two different supported modes in the daemon. Those are:
 
 While status have detailed information about the daemon and its configuration itself, events covers power failures and alike.
 
-`./apcupsd_disclosure.py -h
-usage: apcupsd_disclosure.py 0.1 dash@undisclose.de June 2019
-       [-h] [-m MODE] -t TARGET [-p PORT]
-
-Lil' tool for Information Disclosure of apcupsd
+> ./apcupsd_disclosure.py -h
+> usage: apcupsd_disclosure.py 0.1 dash@undisclose.de June 2019
+>       [-h] [-m MODE] -t TARGET [-p PORT]
+>
+> Lil' tool for Information Disclosure of apcupsd
 
 optional arguments:
   -h, --help            show this help message and exit
