@@ -40,8 +40,8 @@ optional arguments:
                         "events", default is "status"
   -t TARGET, --target TARGET
                         define the target
-  -p PORT, --port PORT  define the target port
-`
+  -p PORT, --port PORT  define the target port`
+
 Get the status information (you do not need the -m option as status is default):
 `./apcupsd_disclosure.py -t 127.0.0.1 -m status`
 
