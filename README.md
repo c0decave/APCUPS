@@ -32,7 +32,7 @@ While status have detailed information about the daemon and its configuration it
 usage: apcupsd_disclosure.py 0.1 dash@undisclose.de June 2019
        [-h] [-m MODE] -t TARGET [-p PORT]
 
- Lil' tool for Information Disclosure of apcupsd```
+ Lil' tool for Information Disclosure of apcupsd
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -40,13 +40,13 @@ optional arguments:
                         "events", default is "status"
   -t TARGET, --target TARGET
                         define the target
-  -p PORT, --port PORT  define the target port`
+  -p PORT, --port PORT  define the target port```
 
 Get the status information (you do not need the -m option as status is default):
-`./apcupsd_disclosure.py -t 127.0.0.1 -m status`
+```./apcupsd_disclosure.py -t 127.0.0.1 -m status```
 
 Get the events:
-`./apcupsd_disclosure.py -t 127.0.0.1 -m events`
+```./apcupsd_disclosure.py -t 127.0.0.1 -m events```
 
 ### Shodan
 
